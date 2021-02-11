@@ -17,6 +17,7 @@ import { MAT_DATE_LOCALE } from '@angular/material/core';
 import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { NewTrainingComponent } from './training/new-training/new-training.component';
+import { StopTrainingComponent } from './training/current-training/stop-training.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { NewTrainingComponent } from './training/new-training/new-training.compo
     WelcomeComponent,
     HeaderComponent,
     SidenavListComponent,
-    NewTrainingComponent    
+    NewTrainingComponent,
+    StopTrainingComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +45,7 @@ import { NewTrainingComponent } from './training/new-training/new-training.compo
   providers: [
     {provide: MAT_DATE_LOCALE, useValue: 'en-GB'}
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [StopTrainingComponent]
 })
 export class AppModule { }
