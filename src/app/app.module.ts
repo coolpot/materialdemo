@@ -12,6 +12,7 @@ import { CurrentTrainingComponent } from './training/current-training/current-tr
 import { PastTrainingComponent } from './training/past-training/past-training.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { MAT_DATE_LOCALE } from '@angular/material/core';
 
 @NgModule({
@@ -22,7 +23,7 @@ import { MAT_DATE_LOCALE } from '@angular/material/core';
     TrainingComponent,
     CurrentTrainingComponent,
     PastTrainingComponent,
-    WelcomeComponent
+    WelcomeComponent    
   ],
   imports: [
     BrowserModule,
@@ -30,7 +31,8 @@ import { MAT_DATE_LOCALE } from '@angular/material/core';
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     {provide: MAT_DATE_LOCALE, useValue: 'en-GB'}
