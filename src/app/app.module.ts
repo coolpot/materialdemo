@@ -18,6 +18,7 @@ import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { NewTrainingComponent } from './training/new-training/new-training.component';
 import { StopTrainingComponent } from './training/current-training/stop-training.component';
+import { AuthService } from './auth/auth.service';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { StopTrainingComponent } from './training/current-training/stop-training
     ReactiveFormsModule
   ],
   providers: [
+    AuthService,
     {provide: MAT_DATE_LOCALE, useValue: 'en-GB'}
   ],
   bootstrap: [AppComponent],
