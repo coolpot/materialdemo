@@ -27,6 +27,10 @@ export class TrainingService {
         return { ...this.runningExercise };
     }
 
+    getCompletedOrCancelledExercise() {
+        return this.exercises.slice();
+    }
+
     completeExercise() {
         this.exercises.push({...this.runningExercise, date: new Date(), state: 'completed'});
         this.runningExercise = null;
