@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "fitnessapp-f868b": {
+      "hosting": {
+        "fitnesstracker": [
+          "fitnessapp-f868b"
+        ]
+      }
+    }
+  }
+}
